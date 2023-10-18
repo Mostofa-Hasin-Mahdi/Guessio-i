@@ -1,6 +1,8 @@
 
 /*
-Made by
+█▀▄▀█ █▀▀█ █▀▀▄ █▀▀ 　 █▀▀▄ █░░█ 
+█░▀░█ █▄▄█ █░░█ █▀▀ 　 █▀▀▄ █▄▄█ 
+▀░░░▀ ▀░░▀ ▀▀▀░ ▀▀▀ 　 ▀▀▀░ ▄▄▄█
 █▄─█▀▀▀█─▄█─█─█▄─▄█─▄─▄─█▄─▄▄─█░█░██─▄▄▄▄█▄─▄███▄─▄▄─█
 ██─█─█─█─██─▄─██─████─████─▄█▀█▄▄░██─██▄─██─██▀██─▄█▀█
 ▀▀▄▄▄▀▄▄▄▀▀▄▀▄▀▄▄▄▀▀▄▄▄▀▀▄▄▄▄▄▀▀▄▄▄▀▄▄▄▄▄▀▄▄▄▄▄▀▄▄▄▄▄▀
@@ -30,8 +32,7 @@ void prompt(){//PROMPT MENU TO START
     string choice;
     cout<<"\tType 'start' to begin!:\n";
     cin>>choice;
-    chce:
-    cin>>choice;
+    srts:
     if(choice == "start"){
         start();
     }
@@ -39,6 +40,9 @@ void prompt(){//PROMPT MENU TO START
         cout<<"type again: \n";
         goto chce;
     }
+    chce:
+    cin>>choice;
+    goto srts;
 }
 
 void start(){//THE TABLE OF SCRIBBLED WORDS WITH INPUT FUNCTIONS
